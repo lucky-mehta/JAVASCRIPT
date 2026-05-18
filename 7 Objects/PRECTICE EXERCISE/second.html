@@ -1,0 +1,25 @@
+//CREATE AN OBJECT WITH TWO REFERANCES AND LOG CHANGES TO ONE OBJECT BY CHANGING THE OTHER ONE.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRECTICE SET 7</title>
+</head>
+<body>
+  <script>
+    let product = {
+      name:'jeans',
+      size:'S',
+      fit:'slim fit',
+    };
+    let copyProduct = product;
+    console.log(product);
+    copyProduct.size='M';
+    console.log(product);
+    copyProduct.fit='Regular Fit';
+    console.log(product);
+    
+  </script>
+</body>
+</html>
