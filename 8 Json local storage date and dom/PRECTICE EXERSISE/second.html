@@ -1,0 +1,28 @@
+<!-- In the first problem add the name to the output no -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRECICE SET 8</title>
+</head>
+<body>
+  <h3 id="greeting"></h3>
+  <script>
+    function doGreeting(personName='dear'){
+let date = new Date ();
+let hours = date.getHours();
+let heading = document.querySelector('#greeting');
+console.log(hours);
+if(hours > 5 && hours < 12){
+  heading.innerText = `Good Morning ${personName}`;
+}else if(hours >12 && hours< 18){
+  heading.innerText = `Good Afternoon ${personName}`;
+}else{
+  heading.innerText = `Good Night ${personName}`;
+}
+    }
+    doGreeting('lucky');
+  </script>
+</body>
+</html>
